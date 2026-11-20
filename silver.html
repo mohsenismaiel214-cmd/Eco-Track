@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eco Track</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/Glossy Gold and Chrome ET Monogram.png">
+</head>
+<body>
+
+  <button class="menu-btn" id="toggle">☰</button>
+
+  <aside id="sidebar">
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="currencies.html"><i class="fa-solid fa-coins"></i> Currencies</a></li>
+        <li><a href="gold.html"><i class="fa-solid fa-ring"></i> Gold</a></li>
+        <li><a href="bars.html"><i class="fa-solid fa-cubes"></i> Bars</a></li>
+        <li><a href="silver.html" class="active"><i class="fa-solid fa-gem"></i> Silver</a></li>
+        <li><a href="calculator.html"><i class="fa-solid fa-calculator"></i> Calculator</a></li>
+        
+      </ul>
+    </nav>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <header>
+    <a class="logo" href="index.html"><img src="images/logo.png" alt="Logo"></a>
+  </header>
+
+  <main class="page">
+    <h1>أسعار الفضة اليوم</h1>
+    <small class="note" id="silver-date"></small>
+
+    <div class="cards">
+  <div class="card">
+    <h2>عيار 999</h2>
+    <p class="price" id="s999">--</p>
+    <span>بيع (جنيه / جرام)</span>
+    <p class="buy">شراء: <b id="b999">--</b></p>
+  </div>
+  <div class="card">
+    <h2>عيار 925</h2>
+    <p class="price" id="s925">--</p>
+    <span>بيع (جنيه / جرام)</span>
+    <p class="buy">شراء: <b id="b925">--</b></p>
+  </div>
+  <div class="card">
+    <h2>عيار 800</h2>
+    <p class="price" id="s800">--</p>
+    <span>بيع (جنيه / جرام)</span>
+    <p class="buy">شراء: <b id="b800">--</b></p>
+  </div>
+</div>
+
+    <h2 class="section-title">سبائك الفضة (عيار 999)</h2>
+    <small class="note" id="bar-fee-note"></small>
+    <div class="cards" id="silver-bars"></div>
+  </main>
+
+  <footer>الأسعار استرشادية وقد تختلف عن السوق المحلي. © 2026</footer>
+
+  <script src="js/script.js"></script>
+  <script src="prices.js"></script>
+  <script src="silver.js"></script>
+</body>
+</html>
